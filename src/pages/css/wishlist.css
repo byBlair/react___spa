@@ -1,0 +1,45 @@
+.wishlist{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+    font-family: 'Arita-dotum-Medium';
+}
+.wishlist>dl{
+    text-align: center;
+}
+.wishlist>dl>dt{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.wishlist .boxcart{
+    width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.boxcart .pic{
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: left;
+}
+.boxcart img{
+    width: 200px;
+}
+.boxcart figcaption{
+    margin-top: 50px;
+}
+.boxcart figure>button{
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(223, 145, 0);
+    color: #fff;
+    font-family: 'Arita-dotum-Medium';
+}
