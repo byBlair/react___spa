@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 리액트로 만든 설화수 홈페이지
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 소개
 
-## Available Scripts
+리액트 spa로 만든 설화수 홈페이지 입니다
 
-In the project directory, you can run:
+## 배포링크
 
-### `npm start`
+배포방식은 vercel를 이용하였습니다.
+https://git-mobile-mvz2.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 개발 도구 및 환경
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. 개발환경 : VSCode
+2. 개발도구 : html,css,react
 
-### `npm test`
+## 프로젝트 설명
+리액트로 전체적인 홈페이지를 완성하였으며, 페이지별로 어떻게 설계를 했는지 설명하려고 한다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 메인페이지
+메인 홈페이지를 들어오게 되면 맨 처음 홍보배너칸이 보이는데 이부분은 swiper 라이브러리를 사용해주었다.
+버튼부분은 커스텀해주었다.
+ranking 부분이나 bestseller 부분은 직접 코드를 넣어 작성해주었고 
+전체상품 같은 경우에는 map으로 <productItem>에 있는 데이터들을 끌고와 전체 제품들을 보여주었다
 
-### `npm run build`
+## 전체상품
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+전체 상품페이지에는 말그대로 전체 상품을 전부 확인 할 수 있는 페이지인데,
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 검색하기 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Brands
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+브랜드 페이지는 그 브랜드의 고유한 느낌을 보여주는 페이지이기에 디자인이 굉장히 중요하다고 생각했고
+제일 먼저 보여지는 문구들 백그라운드에는 그라디언트를 주어 설화수의 고유한 느낌을 보여주려고 했다
+our belief, our ingredient, our innovation, created by sulwhasoo 내용은 설화수와 아모레퍼시픽의 브랜드 철학을 보여주고 있다
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Magazine
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+매거진 페이지는 원래 아모레퍼시픽에 있던 내용을 차용하여 설계 했는데
+간단한 코드로 pdf 다운로드가 되게 만들었다
+예를 들어 <a href="/pdf/sulwhasoo_2021_vol.98 (1).pdf" download="/pdf/sulwhasoo_2021_vol.98 (1).pdf">
+이런식으로 파일 위치를 지정해두고 download를 지정해두니 화면에서는 바로 다운로드가 될 수 있게 된다
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## About us, Gift
 
-## Learn More
+설화수, 아모레 퍼시픽 소개페이지입니다.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 상품 상세 페이지
+제품 상세페이지에는 제품 이름과 가격
+그리고 가장 중요한 장바구니와 위시리스트버튼이 들어가는데
 
-### Code Splitting
+아래에 제품 상세페이지는 json 파일을 만들어 map 반복문으로 코드를 클린하게 해주었다
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 장바구니
+## 위시리스트
 
-### Analyzing the Bundle Size
+## footer
+푸터 같은 경우에는 홈페이지에 있는 부분들을 참고해 작성해주었다
+전체적으로 깔끔하게 보이려고 했다
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 개발서버 시작
+npm start
